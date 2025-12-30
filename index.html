@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formation interactive Git et GitHub - Apprenez Git pas à pas avec des exercices pratiques">
+    <meta name="keywords" content="Git, GitHub, Formation, Tutorial, Version Control">
+    <meta name="author" content="Git Mastery Academy">
+    <title>Git Mastery Academy - Formation Interactive</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- jsPDF for certificate generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with progress bar -->
+        <header>
+            <h1>🚀 Git Mastery Academy</h1>
+            <p>Formation Interactive Git & GitHub</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <p class="progress-text" id="progressText">Progression: 0%</p>
+        </header>
+
+        <!-- Main layout: Sidebar + Content -->
+        <div class="main-layout">
+            <!-- Sidebar with modules -->
+            <aside class="sidebar">
+                <div id="moduleList"></div>
+                <button class="cert-button" id="certButton">📜 Mon Certificat</button>
+            </aside>
+
+            <!-- Main content area -->
+            <main class="content" id="mainContent">
+                <div class="welcome-screen">
+                    <h2>Bienvenue dans Git Mastery Academy</h2>
+                    <p>Maîtrisez Git et GitHub pas à pas avec des cours interactifs, des exercices pratiques et des quiz pour valider vos connaissances.</p>
+                    <p>📚 6 modules complets | 💻 Simulateur de console | 🎓 Certificat officiel</p>
+                    <button class="start-button" id="startButton">Commencer la Formation</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div class="modal" id="certModal">
+        <div class="modal-content">
+            <h3>🎓 Générer votre Certificat</h3>
+            <p>Entrez votre nom complet :</p>
+            <input type="text" class="modal-input" id="userName" placeholder="Votre nom">
+            <div class="modal-buttons">
+                <button class="btn-secondary" id="cancelCert">Annuler</button>
+                <button class="btn-primary" id="generateCert">Générer PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Modules -->
+    <script src="js/modules/git-basics.js"></script>
+    <script src="js/modules/branches.js"></script>
+    <script src="js/modules/remote.js"></script>
+    <script src="js/modules/workflow.js"></script>
+    <script src="js/modules/advanced.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
