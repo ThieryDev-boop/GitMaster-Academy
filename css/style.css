@@ -595,4 +595,43 @@ header > p {
     .modal-content {
         padding: 20px;
     }
+
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;              /* permet de passer en colonne sur mobile */
+  justify-content: space-between;
+  align-items: center!important;
+  gap: 20px;
+}
+
+
+.footer-logo img {
+  height: 10px;                 /* adapte la taille à ton logo */
+  object-fit: contain;
+}
+.footer-menu a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+.footer-menu a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 }
