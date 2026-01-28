@@ -73,7 +73,7 @@ const workflowModule = {
             question: 'À quoi servent les "Issues" sur GitHub ?',
             options: [
                 'À créer des branches automatiquement',
-                'À signaler bugs, proposer fonctionnalités et discuter',
+                'À signaler des bugs, proposer des fonctionnalités et discuter',
                 'À fusionner du code automatiquement',
                 'À supprimer des fichiers du projet'
             ],
