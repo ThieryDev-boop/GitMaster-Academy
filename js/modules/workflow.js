@@ -89,7 +89,7 @@ const workflowModule = {
                 'Direct push sur le dépôt original'
             ],
             correct: 1,
-            explanation: 'Le workflow standard est : Fork le projet, créer une branche pour vos modifications, commiter, pusher sur votre fork, puis créer une Pull Request vers l\'original.'
+            explanation: 'Le workflow standard est : Forks le projet, créer une branche pour vos modifications, commiter, pusher sur votre fork, puis créer une Pull Request vers l\'original.'
         }
     ]
 };
